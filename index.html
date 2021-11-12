@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haryanto</title>
+    <link rel="stylesheet" href="css/main.css" class="" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <img
+          id="mobile-cta"
+          src="images/menu.svg"
+          alt="Open Navigation"
+          class="mobile-menu"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            src="images/exit.png"
+            alt="Close Navigation"
+            class="mobile-menu-exit"
+          />
+
+          <ul class="navigation-pane">
+            <li class="project"><a href="#">Project</a></li>
+            <li><a href="#" class="">Blog</a></li>
+            <li><a href="#" class="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <img src="images/anto.jpg" alt="Haryanto-Image" class="hero-img" />
+        <div class="left-col">
+          <p class="name-head">
+            Hi, I am Haryanto <br />
+            Junior Software Enginner
+          </p>
+          <p class="summary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            dolores nostrum facilis! Animi, sequi numquam? Asperiores iste
+            necessitatibus maxime velit tempore dolorum commodi quasi eum. Culpa
+            quaerat delectus quod quisquam.
+          </p>
+          <div class="hero-cta">
+            <a id="test" href="#" class="primary-cta">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hore">
+      <div class="secon-container">
+        <p class="">
+          <br />
+          <br />
+        </p>
+      </div>
+    </section>
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>

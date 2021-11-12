@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Poppins:ital,wght@0,300;0,400;0,600;1,200&display=swap");
+:root {
+  --primary-color: rgb(86, 172, 221);
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: "Heebo";
+}
+
+.navbar {
+  background-color: white;
+  padding: 0.5em;
+}
+
+.navbar .mobile-menu {
+  width: 5%;
+  cursor: pointer;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: end;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: white;
+}
+
+.hero {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.hero-img {
+  width: 250px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.left-col .name-head {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+.left-col .summary {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.left-col .hero-cta {
+  padding-bottom: 2em;
+}
+
+.left-col .hero-cta .primary-cta {
+  background: #ff6464;
+  font-family: "Heebo";
+  color: white;
+  text-decoration: none;
+  padding: 0.3em 1.2em;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.hore {
+  text-align: left;
+  background: #edf7fa;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  background: #6e6c6c;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.2em;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+.mobile-menu-exit {
+  margin-bottom: 2em;
+  float: right;
+  width: 1.8em;
+  height: 1.4;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    float: right;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1.4em;
+    padding: 0.1em 0.1em;
+    margin-right: 1em;
+  }
+  .navbar nav ul.navigation-pane {
+    margin: 0;
+  }
+  .navbar nav li.curent a {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 3em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: right;
+  }
+  .hero .container .hero-img {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    width: 35%;
+    -webkit-clip-path: none;
+            clip-path: none;
+    border-radius: 10%;
+  }
+  .hero .container .left-col {
+    margin: 3em 2em 0 3em;
+    margin-right: 1em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
