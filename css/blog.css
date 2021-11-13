@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Poppins:ital,wght@0,300;0,400;0,600;1,200&display=swap");
+:root {
+  --primary-color: rgb(86, 172, 221);
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: "Heebo";
+}
+
+.navbar {
+  background-color: white;
+  padding: 0.5em;
+}
+
+.navbar .mobile-menu {
+  width: 5%;
+  cursor: pointer;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: end;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: white;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  background: #6e6c6c;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.2em;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+.mobile-menu-exit {
+  margin-bottom: 1em;
+  float: right;
+  width: 1.8em;
+  height: 1.4;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    float: right;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1.4em;
+    padding: 0.1em 0.1em;
+    margin-right: 1em;
+  }
+  .navbar nav ul.navigation-pane {
+    margin: 0;
+  }
+  .navbar nav li.curent a {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=blog.css.map */

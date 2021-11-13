@@ -45,13 +45,13 @@ section {
   background: white;
 }
 
-.hero {
+.introduction {
   text-align: center;
   padding-bottom: 2em;
 }
 
-.hero-img {
-  width: 250px;
+.anto-img {
+  width: 300px;
   clip-path: circle();
   object-fit: fill;
 }
@@ -71,23 +71,140 @@ section {
     font-weight: normal;
   }
 
-  .hero-cta {
+  .anto-resume {
     padding-bottom: 2em;
-    .primary-cta {
+    .resume-viewer {
       background: #ff6464;
       font-family: "Heebo";
       color: white;
       text-decoration: none;
       padding: 0.3em 1.2em;
+      margin-top: 1em;
       font-size: 20px;
       display: inline-block;
     }
   }
 }
 
-.hore {
-  text-align: left;
+.post-project {
+  text-align: center;
   background: #edf7fa;
+  padding-bottom: 2em;
+  .title-post-project {
+    margin-top: -1em;
+    margin-bottom: -1.5em;
+    font-size: 18px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    .view-all-project {
+      text-decoration: none;
+      color: rgb(101, 190, 190);
+    }
+  }
+}
+
+.post-project-1 {
+  background: white;
+
+  .post-1 {
+    text-align: left;
+    margin: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+.post-project-2 {
+  background: white;
+  .post-2 {
+    text-align: left;
+    margin: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+.post-blog-section {
+  padding-bottom: 1em;
+  .post-block-title {
+    font-size: 18px;
+    margin-top: -1em;
+    margin-bottom: -0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    .view-all-blog {
+      text-decoration: none;
+      color: rgb(101, 190, 190);
+    }
+  }
+}
+
+.blog-post-1 {
+  text-decoration: none;
+  margin: 1em;
+  justify-content: center;
+  .blog-1 {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+.blog-post-2 {
+  padding-top: 1em;
+  margin: 1em;
+  justify-content: center;
+  .blog-2 {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+.contact-section {
+  background: #edf7fa;
+  padding-bottom: 2em;
+  position: relative;
+  .galery-form {
+    margin-top: -2em;
+    text-align: center;
+    position: relative;
+  }
+}
+
+.image {
+  text-align: center;
+  display: block;
+  .foto-galery {
+    width: 40%;
+    border-radius: 10px;
+    margin: 1em;
+  }
+}
+
+footer {
+  padding-bottom: 1em;
+  background: white;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  .ref-footer {
+    text-decoration: none;
+  }
+  .img-footer {
+    cursor: pointer;
+    width: 30px;
+    padding-top: 2em;
+    margin-right: 0.5em;
+    text-decoration: none !important;
+    border: 0px !important;
+    outline: none;
+    border-width: 0px;
+    outline-width: 0px;
+    border-bottom: none;
+  }
 }
 
 nav.menu-btn {
@@ -119,7 +236,7 @@ nav {
 }
 
 .mobile-menu-exit {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   float: right;
   width: 1.8em;
   height: 1.4;
@@ -172,11 +289,11 @@ nav {
   section {
     padding: 3em 4em;
   }
-  .hero .container {
+  .introduction .container {
     display: flex;
     justify-content: space-between;
     text-align: right;
-    .hero-img {
+    .anto-img {
       margin-top: 4em;
       margin-bottom: 4em;
       width: 35%;
@@ -188,6 +305,66 @@ nav {
     .left-col {
       margin: 3em 2em 0 3em;
       margin-right: 1em;
+    }
+  }
+
+  .post-project .container {
+    .content-project {
+      margin-right: 2em;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3em;
+      margin-bottom: 3em;
+      width: 100%;
+
+      .post-project-1 {
+        margin-right: 2em;
+      }
+    }
+  }
+
+  .contact-section .container {
+    .contact-form {
+      margin-top: -2em;
+      margin-left: 3em;
+    }
+  }
+
+  .post-blog-section .container {
+    .blog-post-1 {
+      display: flex;
+      justify-content: space-between;
+      .image-blog-1 {
+        width: 60%;
+      }
+      .blog-left {
+        margin-top: -1.2em;
+        margin-left: 2.5em;
+        margin-right: 1em;
+      }
+    }
+
+    .blog-post-2 {
+      display: flex;
+      justify-content: space-between;
+      .image-blog-2 {
+        width: 60%;
+      }
+      .blog-left {
+        margin-top: -1.2em;
+        margin-left: 2.5em;
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .image {
+    text-align: center;
+    display: block;
+    .foto-galery {
+      width: 30%;
+      border-radius: 10px;
+      margin: 1em;
     }
   }
 }

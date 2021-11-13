@@ -47,13 +47,13 @@ section {
   background: white;
 }
 
-.hero {
+.introduction {
   text-align: center;
   padding-bottom: 2em;
 }
 
-.hero-img {
-  width: 250px;
+.anto-img {
+  width: 300px;
   -webkit-clip-path: circle();
           clip-path: circle();
   -o-object-fit: fill;
@@ -74,23 +74,165 @@ section {
   font-weight: normal;
 }
 
-.left-col .hero-cta {
+.left-col .anto-resume {
   padding-bottom: 2em;
 }
 
-.left-col .hero-cta .primary-cta {
+.left-col .anto-resume .resume-viewer {
   background: #ff6464;
   font-family: "Heebo";
   color: white;
   text-decoration: none;
   padding: 0.3em 1.2em;
+  margin-top: 1em;
   font-size: 20px;
   display: inline-block;
 }
 
-.hore {
-  text-align: left;
+.post-project {
+  text-align: center;
   background: #edf7fa;
+  padding-bottom: 2em;
+}
+
+.post-project .title-post-project {
+  margin-top: -1em;
+  margin-bottom: -1.5em;
+  font-size: 18px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post-project .title-post-project .view-all-project {
+  text-decoration: none;
+  color: #65bebe;
+}
+
+.post-project-1 {
+  background: white;
+}
+
+.post-project-1 .post-1 {
+  text-align: left;
+  margin: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.post-project-2 {
+  background: white;
+}
+
+.post-project-2 .post-2 {
+  text-align: left;
+  margin: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.post-blog-section {
+  padding-bottom: 1em;
+}
+
+.post-blog-section .post-block-title {
+  font-size: 18px;
+  margin-top: -1em;
+  margin-bottom: -0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post-blog-section .post-block-title .view-all-blog {
+  text-decoration: none;
+  color: #65bebe;
+}
+
+.blog-post-1 {
+  text-decoration: none;
+  margin: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-post-1 .blog-1 {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.blog-post-2 {
+  padding-top: 1em;
+  margin: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-post-2 .blog-2 {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.contact-section {
+  background: #edf7fa;
+  padding-bottom: 2em;
+  position: relative;
+}
+
+.contact-section .galery-form {
+  margin-top: -2em;
+  text-align: center;
+  position: relative;
+}
+
+.image {
+  text-align: center;
+  display: block;
+}
+
+.image .foto-galery {
+  width: 40%;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+footer {
+  padding-bottom: 1em;
+  background: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer .ref-footer {
+  text-decoration: none;
+}
+
+footer .img-footer {
+  cursor: pointer;
+  width: 30px;
+  padding-top: 2em;
+  margin-right: 0.5em;
+  text-decoration: none !important;
+  border: 0px !important;
+  outline: none;
+  border-width: 0px;
+  outline-width: 0px;
+  border-bottom: none;
 }
 
 nav.menu-btn {
@@ -121,7 +263,7 @@ nav li a {
 }
 
 .mobile-menu-exit {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   float: right;
   width: 1.8em;
   height: 1.4;
@@ -178,7 +320,7 @@ nav li a {
   section {
     padding: 3em 4em;
   }
-  .hero .container {
+  .introduction .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -187,7 +329,7 @@ nav li a {
             justify-content: space-between;
     text-align: right;
   }
-  .hero .container .hero-img {
+  .introduction .container .anto-img {
     margin-top: 4em;
     margin-bottom: 4em;
     width: 35%;
@@ -195,9 +337,69 @@ nav li a {
             clip-path: none;
     border-radius: 10%;
   }
-  .hero .container .left-col {
+  .introduction .container .left-col {
     margin: 3em 2em 0 3em;
     margin-right: 1em;
+  }
+  .post-project .container .content-project {
+    margin-right: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 100%;
+  }
+  .post-project .container .content-project .post-project-1 {
+    margin-right: 2em;
+  }
+  .contact-section .container .contact-form {
+    margin-top: -2em;
+    margin-left: 3em;
+  }
+  .post-blog-section .container .blog-post-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .post-blog-section .container .blog-post-1 .image-blog-1 {
+    width: 60%;
+  }
+  .post-blog-section .container .blog-post-1 .blog-left {
+    margin-top: -1.2em;
+    margin-left: 2.5em;
+    margin-right: 1em;
+  }
+  .post-blog-section .container .blog-post-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .post-blog-section .container .blog-post-2 .image-blog-2 {
+    width: 60%;
+  }
+  .post-blog-section .container .blog-post-2 .blog-left {
+    margin-top: -1.2em;
+    margin-left: 2.5em;
+    margin-right: 1em;
+  }
+  .image {
+    text-align: center;
+    display: block;
+  }
+  .image .foto-galery {
+    width: 30%;
+    border-radius: 10px;
+    margin: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
