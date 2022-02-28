@@ -124,6 +124,40 @@ nav li a {
   }
 }
 
+.galery-form {
+  background: #edf7fa;
+  text-align: left;
+  padding-bottom: 2em;
+}
+
+footer {
+  padding-bottom: 1em;
+  background: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer .ref-footer {
+  text-decoration: none;
+}
+
+footer .img-footer {
+  cursor: pointer;
+  width: 30px;
+  padding-top: 2em;
+  margin-right: 0.5em;
+  text-decoration: none !important;
+  border: 0px !important;
+  outline: none;
+  border-width: 0px;
+  outline-width: 0px;
+  border-bottom: none;
+}
+
+
 @media only screen and (min-width: 1080px) {
   .container {
     width: 1080px;

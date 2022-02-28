@@ -329,10 +329,11 @@ nav li a {
             justify-content: space-between;
     text-align: right;
   }
+
   .introduction .container .anto-img {
     margin-top: 4em;
     margin-bottom: 4em;
-    width: 35%;
+    width: 45%;
     -webkit-clip-path: none;
             clip-path: none;
     border-radius: 10%;

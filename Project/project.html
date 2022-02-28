@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="../css/galery.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <img
+          id="mobile-cta"
+          src="../images/menu.svg"
+          alt="Open Navigation"
+          class="mobile-menu"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            src="../images/close-window.png"
+            alt="Close Navigation"
+            class="mobile-menu-exit"
+          />
+
+          <ul class="navigation-pane">
+            <li class="project"><a href="../index.html">Home</a></li>
+            <li class="project"><a href="project.html">Project</a></li>
+            <li><a href="../blog/blog.html" class="">Blog</a></li>
+            <!-- <li><a href="#" class="">Galery</a></li> -->
+            <li><a href="#" class="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="galery-form">
+      <div class="content-project">
+          <div class="post-1">
+            <h2>
+              <a href="DIP_material/index.html">Digital Image Processing</a>
+            </h2>
+            <p class="">28 february 2022 &verbar; DIP, Image Processing</p>
+            <p class="">
+              Image processing plays an important role in our daily lives with various applications such as in social media (face detection), medical imaging (X-ray, CT-scan), security (fingerprint recognition) to robotics & space. This tutorial will touch the core of image processing, from concepts to code using Python.
+              <a href="DIP_material/index.html" class=""><span>Read More ...</span></a>
+            </p>
+          </div>
+        </div>      
+    </section>
+
+    <footer class="footer">
+      <a
+        href="https://www.facebook.com/G1C013011"
+        target="_blank"
+        class="ref-footer"
+      >
+        <img src="../images/facebook.svg" alt="gsgsdgsd" class="img-footer" />
+      </a>
+      <a
+        href="https://www.instagram.com/antostsna/"
+        target="_blank"
+        class="ref-footer"
+      >
+        <img src="../images/instagram.svg" alt="sgsdghsdg" class="img-footer" />
+      </a>
+      <a href="https://github.com/anto112" target="_blank" class="ref-footer">
+        <img src="../images/github.svg" alt="" class="img-footer" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/haryanto-b05334ab/"
+        target="_blank"
+        class="ref-footer"
+      >
+        <img src="../images/linkedin.svg" alt="" class="img-footer" />
+      </a>
+      <p></p>
+
+      <!-- <p>Copyright &copy;2021 <em id="date"></em> Haryanto</p> -->
+    </footer>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
